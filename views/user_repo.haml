@@ -1,0 +1,9 @@
+!!! 5
+%body
+ -# リクエストURL
+ %a{:href => @req_url, :target => "_blank"}
+  = @req_url
+ 
+ - @description.each do |item|
+  %p= item
+ 
